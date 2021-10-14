@@ -11,8 +11,14 @@ const InputForm = (props) => {
 
     const formSubmitHandler = (e) => {
         e.preventDefault();
-        props.addTodo(input);
-        setInput("");
+        if(input !== "")
+        {
+           
+            props.addTodo(input);
+            setInput("");
+
+        }
+       
     }
 
 

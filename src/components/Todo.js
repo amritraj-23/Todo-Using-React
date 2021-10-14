@@ -4,7 +4,7 @@ import { FaTrashAlt } from 'react-icons/fa';
 import { BsFillArrowUpCircleFill,BsArrowDownCircleFill } from "react-icons/bs";
 
 const Todo = (props) => {
-    //  const index = props.key1;
+    
     const deleteTodoHandler = () => {
         props.deleteTodo(props.id)
     }

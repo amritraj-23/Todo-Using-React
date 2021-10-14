@@ -8,25 +8,10 @@ import { v4 as uuid } from 'uuid';
 const TodoApp = () => {
 
     const initalialTodos = [
-        // {
-        //     id:uuid(),
-        //     task:'Go To Shopping',
-        //     completed:false
-        // },
-        // {
-        //     id:uuid(),
-        //     task:'Learn React',
-        //     completed:false
-        // }
+       
     ]
-
-    // const initalialTodos = JSON.parse(window.localStorage.getItem('todos'||"[]"));
     
     const [todos, setTodos] = useState(initalialTodos);
-
-    // useEffect(() => {
-    //     window.localStorage.setItem('todos', JSON.stringify(todos));
-    // },[todos])
 
  
     const addTodo = (inputTask) => {
